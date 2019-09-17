@@ -1,7 +1,13 @@
 
+/*
+Author:Andrew Minai
+This is the interface and is a template that is showing all the methods
+that we are going to use in this program.So if other developers are reading
+our code they can see clearly what our program's objective is.
+This also has a generic type of type T
+*/
 
 
-package ClassAssignment;
 
 public interface BagInterface<T>
 {

@@ -1,4 +1,11 @@
-package ClassAssignment;
+/*
+This class Item gives that
+has a string field called name and a double field called price and an integer field called quantity.
+It gives the constructor of Item which initializes the values of name,quantity,price.
+And has setters and getters for retrieving the values of the private variables to
+encapsulate our data for protecting our data.
+
+*/
 
 public class Item {
     private String name;
@@ -66,10 +73,7 @@ public class Item {
     @Override
     public String toString() {
         return String.format(
-                "Name: %s\nPrice: $%.2f\nQuantity: %d",
-                name,
-                price,
-                quantity
+                "Name: %s\nPrice: $%.2f\nQuantity: %d",name,price,quantity
         );
     }
 }

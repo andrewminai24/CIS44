@@ -1,4 +1,13 @@
-package ClassAssignment;
+/*
+Author: Andrew Minai
+This is the ArrayBag class that has a final attribute
+which means that we can not extend this class.
+And has a Generic type of type T and implements the function definitions
+in BagInterface.
+
+
+
+*/
 
 public final class ArrayBag<T> implements BagInterface<T>
 {
@@ -8,7 +17,7 @@ public final class ArrayBag<T> implements BagInterface<T>
     private static final int DEFAULT_CAPACITY = 25;
     private static final int MAX_CAPACITY = 10000;
 
-    /** Creates an empty bag whose initial capacity is 25. */
+    /** Creates an empty bag which initial capacity is 25. */
     public ArrayBag()
     {
         this(DEFAULT_CAPACITY);

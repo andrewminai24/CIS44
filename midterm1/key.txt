@@ -1,0 +1,21 @@
+1.All entries in the stack ADT must have the same data type
+TRUE
+2.A stack restricts access to its entries
+TRUE
+3.Parentheses override the rule of operator precedence.
+TRUE.
+4.You can only pop from the top of the stack but you can peek at any entry in the stack.
+FALSE.
+5.The bottom item in a stack was the last item added.
+FALSE.
+6.You cannont reach the bottom item in a stack without popping all of the other items off first.
+TRUE.
+7.A linkedlist requires less memory than an array of the same length.
+FALSE.
+8.A node does not reference the data in another node.
+TRUE.
+9.After the method clear the programmer does not need to worry about deallocating the nodes that were  in the chain.
+TRUE.
+10.When comparing objects in bag, we assume that the class to which the objects belong defines
+it's own version equals.
+TRUE.

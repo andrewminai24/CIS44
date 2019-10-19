@@ -8,17 +8,30 @@ Time:O(n)
 Space: O(n)
 */
 
+import java.util.LinkedList;
 
-class Recursive{
+public class ListNode {
+    *     int val;
+    *     ListNode next;
+    *     ListNode(int x) { 
+            val = x; 
+    }
+}
+
+public class Recursive{
+    public static void main(String[] args){
+        
+    }
     
-    public ListNode reverseList(ListNode head){
-        if(head == null || head.next == nul){
+    public static ListNode reverseList(ListNode head){
+        if(head == null || head.next == null){ //Base case
             return head;
         }
         ListNode reverseListHead = reverseList(head.next);
         head.next.next = head;
         head.next = null;
-        return reversedListHead;
+        return reverseListHead;
     }
+
 
 }

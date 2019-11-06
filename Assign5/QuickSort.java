@@ -1,4 +1,3 @@
-package quicksort;
 
 public class QuickSort <T extends Comparable> {
     public void quickSort(T[] a) {

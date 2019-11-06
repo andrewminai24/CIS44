@@ -1,4 +1,3 @@
-package mergesort;
 
 public class MergeSort <T extends Comparable<? super T>> {
     public void mergeSort(T[] a) {
@@ -9,15 +8,15 @@ public class MergeSort <T extends Comparable<? super T>> {
     }
     
     private void mergeSort(T[] a, T[] tempArray, int first, int last) {
-        int mid = (first + last) / 2;
-        
         if (first < last) {
+            int mid = (first + last) / 2;
+            
             mergeSort(a, tempArray, first, mid);
             mergeSort(a, tempArray, mid + 1, last);
-        }
-        
-        else {
-            merge(a, tempArray, first, mid, last);
+            
+            if (a[mid].compareTo(a[mid + 1]) > 0) {
+                merge(a, tempArray, first, mid, last);
+            }
         }
     }
     
@@ -53,11 +52,5 @@ public class MergeSort <T extends Comparable<? super T>> {
         for (index = first; index <= last; index++) {
             a[index] = tempArray[index];
         }
-        
-        for (T item: tempArray) {
-            System.out.print(item + " ");
-        }
-        
-        System.out.println();
     }
 }

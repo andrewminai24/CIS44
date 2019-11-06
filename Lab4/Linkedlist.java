@@ -4,7 +4,7 @@ class LinkedList {
 
 	 Node node; 
 
-private	static class Node { 
+ class Node { 
 
 		int data; 
 		Node next; 
@@ -15,14 +15,7 @@ private	static class Node {
 			next = null; 
 		} 
 	} 
-	public class Node {
-		Node(int d)
-		{
-			data = d;
-			next = null;
-		}
-	}
-
+	
 	/* Function to reverse the linked list */
 
 	public Node reverseList(Node head) {

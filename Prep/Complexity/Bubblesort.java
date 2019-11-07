@@ -25,10 +25,7 @@ g(n) = n^2
 
 public class Bubblesort{
 
-    public static void main(String[] args){
-        System.out.println(sort(12,3,13,1));
-        
-    }
+    
 
     public static <T> void display(T [] arr)
     {
@@ -39,11 +36,8 @@ public class Bubblesort{
         }
     }
     
-
-
-    public static <T extends Compareable <T>> void sortB()
+    public static <T extends Compareable <T>> void sortB(T arr []){
     
-    public static void sort(int arr[]){
         for(int i = 0; i < arr.length; i++)
             for(int j=i+1; i < arr.length-1;j++)
             {
@@ -57,4 +51,3 @@ public class Bubblesort{
         }
     }
     
-}

@@ -10,7 +10,7 @@ public class Duplicate{
     }
  public List<Integer> findDuplicate(int []num){
      List<Integer> output =  new Arraylist();
-     for(int i = 0; i < array.length(); i++){
+     for(int i = 0; i < nums.length; i++){
         int index = Math.abs(num[i]) -1;
         if(num[index] < 0) output.add(index+1);
         num[index] = -num[index];

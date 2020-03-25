@@ -1,19 +1,21 @@
 public class PalindromeNum {
     public static void main(String[] args){
-        isPalindrome(123);
+        System.out.println(isPalindrome(321));
     }
-    public int isPalindrome(int x) {
-       if(x < 0 || x != 0 && x % 10 == 0){
-           return -1;
+    
+    public static boolean  isPalindrome(int x) {
+       if(x < 0 && x % 10 == 0){
+           return false;
        }
        int reversed = 0;
        int original = x;
        while(x != 0){
        reversed =  reversed * 10 + x % 10;
-       x = x/10;
-       return original == original;
+       x = x / 10;
 
         }
+        return reversed == original;
+
     }
-}
+ }
 

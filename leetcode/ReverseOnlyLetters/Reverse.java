@@ -1,8 +1,8 @@
 import javax.print.DocFlavor.STRING;
 
 public class Reverse{
-    public static void main(Strings[] args){
-
+    public static void main(String[] args){
+        reverseOnlyStrings("andrew");
     }
     public static String reverseOnlyStrings(String s){
         char [] characters = s.toCharArray();

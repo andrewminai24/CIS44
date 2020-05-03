@@ -1,3 +1,5 @@
+//Time complexity:0(n)
+
 public class IpAddress{
     public static void main(String[]args){
 
